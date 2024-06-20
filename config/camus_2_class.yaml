@@ -1,0 +1,23 @@
+# train
+BATCH_SIZE: 64
+LR: 0.001
+NUM_WORKERS: 8
+EPOCHS: 200
+VERBOSE: True
+TRAIN_PRINT: 200
+VAL_PRINT: 20
+
+# model
+MODEL: 'resnet18'
+RTN_ID: True
+WEIGHTS:
+PRED_CLASS_MAP_ID: 1
+
+# data
+DATASET: 'camus'
+DATA_ROOT:
+AVC_CLASSES: ['noncontrast-A2C', 'noncontrast-A4C']
+TRAIN_TRANSFORMS: True
+RESOLUTION: 112
+INP_DIM: 1
+NORM: 'z'

@@ -1,0 +1,28 @@
+# train
+BATCH_SIZE: 64
+LR: 0.001
+NUM_WORKERS: 8
+EPOCHS: 50
+VERBOSE: True
+TRAIN_PRINT: 50
+VAL_PRINT: 30
+
+# model
+MODEL: 'score_fusion'
+RTN_ID: True
+RTN_DATASET_ID: False
+WEIGHTS:
+PRED_CLASS_MAP_ID:
+
+# data
+DATASET: 'score_fusion'
+DATA_ROOT:
+AVC_CLASSES: ['contrast-A2C', 'contrast-A3C', 'contrast-A4C', 'contrast-PLAX',
+              'noncontrast-A2C', 'noncontrast-A3C', 'noncontrast-A4C', 'noncontrast-A5C',
+              'noncontrast-PLAX','noncontrast-PLAX-AV', 'noncontrast-PSAX-AV', 'noncontrast-PSAX-PM',
+              'noncontrast-RV','noncontrast-SC','noncontrast-SC-IVC']
+USE_NMD: False
+RESOLUTION: 112
+TRAIN_TRANSFORMS: True
+INP_DIM: 1
+NORM: 'z'

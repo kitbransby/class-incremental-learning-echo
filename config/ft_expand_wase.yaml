@@ -1,0 +1,26 @@
+# train
+BATCH_SIZE: 64
+LR: 0.001
+NUM_WORKERS: 8
+EPOCHS: 200
+VERBOSE: True
+TRAIN_PRINT: 200
+VAL_PRINT: 20
+
+# model
+MODEL: 'resnet18_15class'
+RTN_ID: True
+WEIGHTS:
+FREEZE:
+PRED_CLASS_MAP_ID: 0
+
+
+# data
+DATASET: 'wase'
+DATA_ROOT:
+AVC_CLASSES: ['noncontrast-A2C', 'noncontrast-A3C', 'noncontrast-A4C', 'noncontrast-A5C',
+              'noncontrast-PLAX','noncontrast-PLAX-AV', 'noncontrast-PSAX-AV', 'noncontrast-PSAX-PM']
+RESOLUTION: 112
+TRAIN_TRANSFORMS: True
+INP_DIM: 1
+NORM: 'z'

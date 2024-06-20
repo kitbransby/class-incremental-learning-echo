@@ -1,0 +1,25 @@
+# train
+BATCH_SIZE: 64
+LR: 0.001
+NUM_WORKERS: 8
+EPOCHS: 20
+VERBOSE: True
+TRAIN_PRINT: 200
+VAL_PRINT: 20
+
+# model
+MODEL: 'resnet18'
+RTN_ID: True
+WEIGHTS: '2024-05-13-16-25-14-1715613914_resnet_continual_ft_baseline'
+FREEZE:
+PRED_CLASS_MAP_ID: 3
+
+
+# data
+DATASET: 'stg'
+DATA_ROOT:
+AVC_CLASSES: ['contrast-A2C', 'contrast-A3C', 'contrast-A4C', 'contrast-PLAX']
+RESOLUTION: 112
+SHUFFLE_PATCHES: False
+INP_DIM: 1
+NORM: 'z'

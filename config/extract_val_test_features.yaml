@@ -1,0 +1,15 @@
+# train
+BATCH_SIZE: 64
+LR: 0.001
+NUM_WORKERS: 8
+EPOCHS: 5
+VERBOSE: True
+TRAIN_PRINT: 100
+VAL_PRINT: 30
+
+# model
+MODEL: 'extract_features'
+RTN_ID: True
+RTN_DATASET_ID: False
+WEIGHTS:
+PRED_CLASS_MAP_ID:
