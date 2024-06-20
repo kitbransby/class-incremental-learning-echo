@@ -3,7 +3,7 @@
 
 _under review at MICCAI workshop ASMUS-2024_
 
-![](C:\Users\KitBransby\GitHub\class-incremental-learning-echo\evaluation\architecture.png)
+![](evaluation/architecture.png)
 
 ## Abstract
 Training an echocardiography view classifier that generalises and maintains performance in real-life cases requires diverse multi-site data, and frequent updates with newly available data to mitigate model drift. Simply fine-tuning on new datasets results in 'catastrophic forgetting', and can be challenging as the view labels vary between sites. Alternatively, collecting all data on a single server and re-training is not feasible as data sharing agreements may restrict image transfer, or make datasets available at different times. In addition, the time and cost associated with re-training is prohibitive and grows with every new dataset. We propose a class-incremental learning method which learns an expert network for each dataset, which are combined with a score fusion network. We minimize the influence of 'unqualified experts' by weighting each contribution by a learnt in distribution score. Our weighting method promotes transparency as the contribution of each expert is known during inference, and can enable multi-site learning by providing a simple workaround where licensing prevents image sharing but not the sharing of byproduct features. We validate our work on 6 datasets from multiple sites, demonstrating significant reductions in training time while improving view classification performance. 
