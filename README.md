@@ -19,7 +19,7 @@ git clone https://github.com/kitbransby/class-incremental-learning-echo.git
 cd class-incremental-learning-echo
 
 # Create a virtual environment (optional but recommended)
-conda create -n class-incremental-learning-echo --file requirements.txt
+conda env create -n class-incremental-learning-echo --file=requirements.yml
 
 # activate env
 conda activate class-incremental-learning-echo
